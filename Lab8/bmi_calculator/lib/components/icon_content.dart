@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:bmi_calculator/constants.dart';
 
 class IconContent extends StatelessWidget {
-  final FaIconData icon; // Dùng IconData ở đây
+  final FaIconData icon;
   final String label;
 
   const IconContent({

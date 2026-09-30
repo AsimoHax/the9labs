@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('assets/images/flutter.png'),
+                backgroundImage: AssetImage('images/flutter.png'),
               ),
               Text(
                 'Pham Minh Triet',

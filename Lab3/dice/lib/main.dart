@@ -45,7 +45,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 rollDice();
               },
-              child: Image.asset('assets/$leftDiceNumber.jpg'),
+              child: Image.asset('assets/images/$leftDiceNumber.jpg'),
             ),
           ),
           Expanded(
@@ -53,7 +53,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 rollDice();
               },
-              child: Image.asset('assets/$rightDiceNumber.jpg'),
+              child: Image.asset('assets/images/$rightDiceNumber.jpg'),
             ),
           ),
         ],

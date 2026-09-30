@@ -22,7 +22,6 @@ class RoundIconButton extends StatelessWidget {
       shape: const CircleBorder(),
       fillColor: const Color(0xFF4C4F5E),
       onPressed: onPressed,
-      // 2. Đưa thuộc tính 'child' xuống vị trí cuối cùng
       child: FaIcon(icon),
     );
   }

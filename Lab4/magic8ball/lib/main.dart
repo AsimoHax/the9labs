@@ -40,8 +40,7 @@ class _BallState extends State<Ball> {
             ballNumber = Random().nextInt(5) + 1;
           });
         },
-        // Adding images
-        child: Image.asset('ball$ballNumber.png'),
+        child: Image.asset('assets/ball$ballNumber.png'),
       ),
     );
   }

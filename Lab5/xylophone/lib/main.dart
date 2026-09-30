@@ -13,17 +13,13 @@ class XylophoneApp extends StatefulWidget {
 }
 
 class _XylophoneAppState extends State<XylophoneApp> {
-  // 1. Tạo 1 đối tượng player duy nhất dùng chung cho toàn màn hình
   final AudioPlayer _player = AudioPlayer();
 
-  // 2. Hàm phát âm thanh tối ưu
   void _playSound(int soundNumber) async {
-    // Ngắt âm thanh đang phát trước đó để phát ngay nốt mới
     await _player.stop(); 
     await _player.play(AssetSource('sounds/sound$soundNumber.mp3'));
   }
 
-  // 3. Hàm tạo phím nhạc động để tránh lặp code
   Widget _buildKey({required Color color, required int soundNumber}) {
     return Expanded(
       child: Material(
@@ -37,7 +33,6 @@ class _XylophoneAppState extends State<XylophoneApp> {
 
   @override
   void dispose() {
-    // 解放 Giải phóng bộ nhớ player khi hủy Widget
     _player.dispose();
     super.dispose();
   }

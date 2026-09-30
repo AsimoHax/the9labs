@@ -45,7 +45,7 @@ class _LocationScreenState extends State<LocationScreen> {
       weatherMessage = weather.getMessage(temperature!);
       cityName = weatherData['name'];
 
-      if (condition < 600) {
+      if (condition < 800) {
         backgroundImage = 'images/rainy_bg.jpg';
       } else {
         backgroundImage = 'images/location_background.jpg';
